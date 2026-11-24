@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --mgfc-navy: #0B1F3A;
+    --mgfc-red: #E31E24;
+    --mgfc-white: #FFFFFF;
+    --mgfc-slate: #718096;
+    --mgfc-bg-light: #F0F4F9;
+  }
+
+  body {
+    font-family: 'Montserrat', 'Open Sans', system-ui, -apple-system, sans-serif;
+    color: #0B1F3A;
+    background-color: #F0F4F9;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Bebas Neue', 'Anton', sans-serif;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #E2E8F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #A0AEC0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+
+/* Print utilities for team sheets and receipts */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-area, #printable-area * {
+    visibility: visible;
+  }
+  #printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF !important;
+    color: #0B1F3A !important;
+  }
+}

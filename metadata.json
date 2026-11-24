@@ -1,0 +1,6 @@
+{
+  "name": "Marlboro Gardens Football Club (MGFC) Platform",
+  "description": "Production-grade digital operations platform for Marlboro Gardens Football Club in Sandton, South Africa. Integrates public club portal, administration, squad management, ZAR player fees, fixtures, governance, and AI reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
